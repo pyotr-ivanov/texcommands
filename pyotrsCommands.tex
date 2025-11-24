@@ -1,0 +1,44 @@
+% custom commands I use verry frequently. use \input{path/to/file/pyotrsCommands} to enable tham
+% requirements: 
+% not all of them might be required in the commands. i use them frequently so i just placed them here.
+%    \usepackage{amsmath}
+%    \usepackage{amssymb}
+%    \usepackage{amsfonts}
+%    \usepackage{amsthm}
+%    \usepackage{cancel}
+%    \usepackage{mathtools}
+%    \usepackage{enumerate}
+%
+%
+% Commands:
+  % Sets and definitions
+      %\set{Universum}{Prädikat} Intensionale Definition einer Menge
+      \newcommand{\set}[2]{\left\{#1\middle|#2\right\}}
+      
+      %\listset{Elemente} Extensionale Definition einer Menge
+      \newcommand{\listset}[1]{\left\{ #1 \right\}}
+
+  % Intervals and Ranges
+      \newcommand{\rn}[1]{\mathbb{R}^{#1}}
+      \newcommand{\NN}{\mathbb{N}}
+      \newcommand{\RR}{\mathbb{R}}
+      \newcommand{\QQ}{\mathbb{Q}}
+      \newcommand{\setminuszero}{\setminus\listset{0}}
+
+    % special chars (my laptop keyboard doesn#t have these for some reason
+      \newcommand{\lt}{<}
+      \newcommand{\gt}{>}
+      \newcommand{\absbar}{|}
+
+    %\abs{Formel} Betragsklammern
+    \newcommand{\abs}[1]{\left\absbar #1 \right\absbar}
+
+    %\flg{name}{index} Folge
+    \newcommand{\flg}[2]{\left(#1_{#2}\right)}
+    \newcommand{\flgdef}[2]{\left(#1_{#2}\right)_{#2\in\NN}}
+
+    %\inv Reziprogwert
+    \newcommand{\inv}{^{-1}}
+
+    %\max{Indexmenge}
+    \renewcommand{\max}[1]{\underset{#1}{\mathrm{max}}}
